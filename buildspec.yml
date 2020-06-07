@@ -4,10 +4,12 @@ phases:
   install:
     commands:
       - echo Hello install
+  pre_build:
+    commands:
+      - npm install
   build:
     commands:
       - echo Prining directory...
       - pwd
       - echo Prining directory...
-      - npm install
       - npm run build
