@@ -6,5 +6,8 @@ phases:
       - echo Hello install
   build:
     commands:
+      - echo Prining directory...
+      - pwd
+      - echo Prining directory...
       - npm install
       - npm run build
