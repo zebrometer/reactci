@@ -3,4 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Hello install    
+      - echo Hello install
+  build:
+    commands:
+      - npm run build
