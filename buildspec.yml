@@ -15,6 +15,4 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo Testing S3 access...
-      - aws s3 ls s3://reactci
-      - echo Testing S3 access...
+      - aws s3 sync ./build s3://reactci --delete --acl public-read	
