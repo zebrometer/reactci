@@ -2,4 +2,5 @@ version: 0.2
 
 phases:
   install:
-    echo Hello install
+    commands:
+      - echo Hello install    
