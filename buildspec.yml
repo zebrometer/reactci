@@ -23,3 +23,7 @@ phases:
   #   commands:
   #     - aws s3 sync ./build s3://reactci --delete --acl public-read	
 
+artifcats:
+  files:
+    - '**/*'
+  base-directory: build
