@@ -19,6 +19,6 @@ phases:
       - pwd
       - echo Prining directory...
       - npm run build
-  post_build:
-    commands:
-      - aws s3 sync ./build s3://reactci --delete --acl public-read	
+  # post_build:
+  #   commands:
+  #     - aws s3 sync ./build s3://reactci --delete --acl public-read	
